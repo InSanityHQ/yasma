@@ -1,0 +1,51 @@
+{
+  "name": "yasma",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "electron-is-dev": "^2.0.0",
+    "electron-updater": "^4.3.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "dev": "craco start",
+    "electron:start": "electron .",
+    "web:build": "craco build",
+    "electron:build": "PUBLIC_URL=./ craco build && electron-builder -wml",
+    "web:test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9",
+    "electron": "^13.2.1",
+    "electron-builder": "^22.11.7",
+    "electron-notarize": "^1.1.0",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}
